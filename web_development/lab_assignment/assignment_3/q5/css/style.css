@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  /*background-color: #40514E;*/
+
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 120px;
+}
+
+h1 {
+  margin: 20px auto 0;
+  width: 30%;
+  font-family: 'Sacramento', cursive;
+  font-size: 4rem; /* 16px=100%=1em */
+  color:#66BFBF
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color:#66BFBF;
+  font-weight: normal;
+
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color:#11999E;
+}
+.cloud-bottom {
+  position: absolute;
+  bottom: 350px;
+  left: 350px;
+}
+
+.cloud-top {
+  position: absolute;
+  right: 350px;
+  top: 80px;
+
+}
+.dev{
+  width:25%;
+  float:left;
+  margin-right: 30px;
+}
+.python{
+  width:25%;
+  float: right;
+  margin-left: 30px;
+  padding-top: 30px;
+
+}
+.pic{
+  width:40%;
+  margin-top: 10px;
+}
+
+.skill-row{
+  margin: 80px auto 80px;
+  width: 50%;
+  text-align: left;
+  line-height: 2;
+}
+/*.skill-desc{
+  clear:left;
+}
+.skill-desc1{
+  clear:right;
+}*/
+.middle-container{
+  margin-top: 50px;
+}
+p{
+  color: #40514E;
+  line-height: 2;
+}
+.profile{
+  width:30%;
+  margin:0 auto;
+
+
+}
+hr{
+  border-style:none none;
+  border-top-style: dotted;
+  width:5%;
+  border-width: 8px;
+  border-color:#EAF6F6;
+  margin: 100px auto;
+
+}
+.py{
+  padding-top:30px;
+
+}
+.contact{
+  padding-bottom: 20px;
+}
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #11999E;
+  color:white;
+  border-width: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 8px;
+}
+.btn:hover{
+  background-color: #66BFBF;
+}
+.bottom-container{
+  background-color: #66BFBF;
+  margin-top: 80px;
+  padding: 30px 0 10px;
+}
+.footer-link{
+  text-decoration: none;
+  color:#11999E;
+  padding: 30px;
+  font-size: 1.1rem;
+
+}
+.footer-link:hover{
+  color:#EAF6F6;
+}

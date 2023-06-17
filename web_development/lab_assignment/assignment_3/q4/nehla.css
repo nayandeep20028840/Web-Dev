@@ -1,0 +1,101 @@
+h1{
+    background-color: aliceblue;
+    text-align: center;
+    text-transform: capitalize;
+    margin: auto;
+    padding: 10px;
+    border-radius: 1cm;
+}
+body{
+    background-color: rgb(0, 33, 63);
+}
+.para{
+    font-size: large;
+    font-size: 3ch;
+    margin: 2%;
+    line-height: 1cm;
+    padding: 1%;
+    width: 45%;
+    background-color: rgb(205, 232, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 1cm;
+}
+.photo{
+    position: absolute;
+top: 120px;
+left: 55%;
+
+
+
+}
+.prp{
+    font-size: 3ch;
+    background-color: rgb(250, 210, 184);
+    color: black;
+    margin: 2%;
+    line-height: 1cm;
+    padding: .5%;
+    padding-left: 1.5%;
+    border-radius: 1cm;
+
+}
+h2{
+    font-size: 4ch;
+    background-color: rgb(199, 255, 233);
+    color: black;
+    margin: 2%;
+    line-height: 1cm;
+    padding: .5%;
+    padding-left: 2%;
+    border-radius: 1cm;
+}
+.my{
+    font-size: 3ch;
+    background-color: rgb(246, 250, 184);
+    color: black;
+    margin: 2%;
+    line-height: 1cm;
+    padding: .5%;
+    padding-left: 1.5%;
+    border-radius: 1cm;
+
+}
+.tr{
+    font-size: 5ch;
+    background-color: rgb(207, 255, 199);
+    color: black;
+    margin: 2%;
+    line-height: 1cm;
+    padding: 5%;
+    padding-left: 1cm;
+    border-radius: 1cm;
+    font-weight: bold;
+    width: 35%;
+}
+video{
+    width: 520px;
+    height: 720px;
+    position: absolute;
+    top: 1950px;
+    left: 55%;
+
+}
+.ad{
+    font-size: 5ch;
+    background-color: rgb(199, 255, 201);
+    color: black;
+    margin: 2%;
+    line-height: 1cm;
+    padding: 5%;
+    padding-left: 1cm;
+    border-radius: 1cm;
+    font-weight: bold;
+    width: 35%;
+}
+.adi{
+    margin: 2.5cm;
+    
+}
+#player {
+    width: 40%;
+}

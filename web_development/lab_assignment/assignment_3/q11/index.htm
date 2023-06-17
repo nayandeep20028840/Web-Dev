@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hometown</title>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      let i = 0;
+
+      window.onload = function () {
+        document.getElementById("output").innerHTML = i;
+      };
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+        i++;
+        document.getElementById("output").innerHTML = i;
+        console.log(i);
+      }
+
+      let x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+          console.log(navigator.geolocation);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+
+      localStorage.setItem("count", i);
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Prayagraj</h1>
+      <p>
+        Prayagraj is one of the oldest cities in India. It is crowned in ancient
+        scriptures as ‘Prayag’ or ‘Teertharaj’ and is considered the holiest of
+        pilgrimage centres of India.
+      </p>
+      <div class="video">
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/vQLFM8tB1fY"
+        >
+        </iframe>
+      </div>
+      <div>
+        <audio controls>
+          <source src="music.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div>
+        <h1>Location</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230660.99610611217!2d81.66149884934819!3d25.4021973904255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1649332585746!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <h1>Images</h1>
+      <img
+        id="drag1"
+        src="https://images.hindustantimes.com/img/2022/03/08/550x309/7acc9218-9f0d-11ec-9dea-cf986250bae9_1646764271291.jpg"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+
+      <img
+        id="drag1"
+        src="https://img.jagranjosh.com/imported/images/E/Others/Allahabad's_name_changed_to_prayagraj.jpg"
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+
+      <img
+        id="drag1"
+        src="https://media.istockphoto.com/photos/big-wooden-boats-in-water-with-cloudy-sky-and-sunbeams-picture-id525109131?k=20&m=525109131&s=612x612&w=0&h=tLlWDSMkWUM_VoVPfC2ihFokuto1ojJGsD2z5zYN1Ds="
+        draggable="true"
+        ondragstart="drag(event)"
+      />
+
+      <div>
+        <h1>Drag Images to Box</h1>
+        No. of Items Selected:
+        <p id="output"></p>
+      </div>
+
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.r1 {
+    text-align: center;
+    color: red;
+    font-size: 90px;
+}
+.r2{
+    color: red;
+    font-size: 70px;
+}
+.r3{
+    color: red;
+    font-size: 70px;
+}
+.r4{
+    color: yellow;
+    font-size: 40px;
+}
+body{
+    background-image: url("BACK.jfif");
+    
+    }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    li {
+     float: left;
+    }
+
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover {
+     background-color: #111;
+    }
+    body{
+        background-image: url("ques_4.webp");
+    }

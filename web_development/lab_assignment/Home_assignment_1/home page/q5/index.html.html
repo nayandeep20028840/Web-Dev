@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning Website</title>
+    <!-- <link rel="stylesheet" href="library images/library image 2.jpg"> -->
+    <style>
+    #home::before{
+        content:"";
+        background-image: url('https://media.gettyimages.com/videos/teenage-girl-studying-with-video-online-lesson-at-home-family-in-video-id1216739535?s=640x640');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity:0.8;
+    }
+    #home{
+        height:600px;
+        display: flex;
+    }
+    .left{
+        display: inline-block;
+        width: 100px; 
+        position: absolute;
+        top:0px;
+        left:6px;
+        filter: invert(70%);
+       
+    }
+    .center{
+        display: block;
+        width:1200px;
+        margin:0px auto;
+        margin-left: 150px;
+        padding:0px 10px;
+        position:absolute;
+        top:45px;
+    }
+    .navbar li {
+        display: inline-block;
+        list-style: none;
+        padding:0px 2px;
+        margin: auto;
+        font-weight: bolder;
+        font-size: 18px; 
+    }
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+        margin-left: 40px;
+        font-weight: bolder;
+        padding:7px 2px;
+    }
+    .left img{
+        width:100px;
+        
+    }
+    .navbar li a:hover{
+        cursor:pointer;
+        text-decoration: underline;
+        color: brown;
+        background-color: silver;
+        border-radius:8px;
+        padding:2px 5px;
+    
+    }
+    .slide{
+        width:1070px;
+        background-color:silver;
+        font-size: 24px;
+        font-weight: bold;
+        padding:10px 40px;
+        margin-left:100px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        position: absolute;
+        top:0px;
+        color:rgb(163, 61, 61);
+    }
+    #text{
+        border:2px solid rgb(194, 98, 98);
+        /* box-shadow: 3px 2px 2px 1px rgb(163, 162, 162); */
+        background-color: rgb(243, 232, 232);
+        border-radius: 30px;
+        width:450px;
+        height:462px;
+        position: absolute;
+        top:700px;
+        bottom:3px;
+        right:3px;  
+        transition:all 2s ease-in-out 0.1s;
+        margin-right: 25px;
+        margin-top: 15px;
+        cursor: pointer;
+        z-index:-1;
+    }
+    #about h1{
+        color:rgb(194, 98, 98);
+        text-shadow:3px 2px 2px 1px rgb(156, 155, 155);
+    }
+    #about{
+        height:600px;
+        display: flex;
+    }
+    #about::before{
+        content:"";
+        background: url("library images/library\ photo-1548048026-5a1a941d93d3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width:55%;
+        height:82%;
+        z-index:-1;
+        opacity: 0.9;
+        margin-left: 40px;
+        margin-top:100px;
+    }
+    .paragraph{
+            text-align: center;
+            padding:25px 35px;
+            font-size: 18px;
+            font-family:sans-serif;
+            
+        }
+        .heading{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .ourbooks{
+            display:flex;
+            margin-top: 90px;
+        }
+        .ourbooks1{
+            display:flex;
+            margin-top:40px;
+        }
+        .box1:hover{
+            cursor: pointer;
+            transform: scale(1.3) rotate(360deg);
+        }
+        .box1{
+            transition:all 0.5s ease-in-out 0.2s;
+        }
+        .box1 img{
+            width:120px;
+            height:170px;
+            padding:0px 30px;
+            margin:10px 10px;
+        }
+        .btn input{
+            padding: 2px 7px;
+            font-size: 18px
+        }
+        .btn input:hover{
+            cursor:pointer;
+            background-color: gray;
+            text-decoration: underline;
+        }
+        #logo{
+            position:fixed;
+        }
+        .list{
+            position:fixed; 
+        }
+        #slider{
+            position: fixed;
+        }
+        .ourbooks2{
+            display:flex;
+            margin-top:105px;
+        }
+        #books{
+            height:1100px;
+        }
+        #blog::before{
+        content:"";
+        background: url("library images/library\ 9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity: 0.75;
+        }
+        #importance{
+            border:2px solid brown;
+            background-color: rgb(236, 232, 232);
+            opacity: 0.7;
+            width:55%;
+            height:200px;
+        }
+        #blog div{
+            position:absolute;
+            right:0px;
+            margin-top:350px;
+        }
+        .para{
+            text-align: center;
+            padding:2px 13px;
+            font-size: 28px;
+            font-family:fantasy;
+            margin-top: 8px;
+        }
+        #heading{
+            text-align: center;
+            font-family: fantasy;
+            font-size: 35px;
+            font-weight: bolder;
+            text-decoration: underline;
+            margin-bottom: 0px;
+        }
+        #blog{
+            height:600px;
+        }
+        #purchase{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+        .button div{
+            margin-right:14px;
+            margin-left:14px;
+        }
+
+        .button input{
+            margin-top:4px;
+            padding:10px;
+            font-size: 14px;
+            
+        }
+        #issue h1{
+            padding-top:100px;    
+        }
+        .purchase input{
+            width:100%;
+        }
+        .purchase label{
+            font-size:20px;
+        }
+        .purchase input:hover,  .purchase select:hover,  .purchase button:hover {
+            border:2px solid gray;
+        }
+        #panulty{
+            font-size:20px;
+        }
+        #panulty input{
+            padding:6px;
+            margin-top:10px;
+            cursor:pointer;
+        }
+        #issue::before{
+        content:"";
+        background: url("library images/library\ 7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width:100%;
+        height:200%;
+        z-index:-1;
+        opacity: 0.75; 
+        }
+        #issue{
+            height:1200px;
+        }
+        #return input{
+            width:100%
+        }
+        #returnbook{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .return label{
+            font-size:18px;
+        }
+        .return input:hover,  .return button:hover {
+            border:2px solid gray;
+        }
+        #return h1{
+            padding-top:100px;    
+        }
+        #return::before{
+        content:"";
+        background: url("library images/library\ 8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width:100%;
+        height:120%;
+        z-index:-1;
+        opacity: 0.75; 
+        }
+        #return{
+            height:700px;
+        }
+        #contactus{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #contactus input, #contactus textarea{
+            width:100%
+        }
+        .contact label{
+            font-size:20px;
+        }
+        .contact input:hover,  .contact textarea:hover {
+            border:2px solid gray;
+        }
+        #contact::before{
+        content:"";
+        background: url("food images/contact\ image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity: 0.75; 
+        }
+        #contact{
+            height:585px;
+        }
+        #contact h1{
+            padding-top:100px;
+        } 
+        #button{
+            width:40%;
+            padding:10px;
+            font-size: 20px;
+            margin:12px;
+            margin-left: 65px;
+            margin-top: 8px;
+        }
+        footer{
+            width:102%;
+            height:30px;
+            color:black;
+            background-color: gray;
+            text-align: center;
+            font-size: 18px;
+            padding:7px 10px;
+            padding-top:10px;
+
+        }  
+    </style>
+</head>
+<body>
+    <nav id="home">
+        <div class="slide" id="slider">
+            <marquee behavior="alternate" direction="right">WHEN IN THE DOUBT GO TO THE MATADOR INC. WEBSITE</marquee>
+        </div>
+            <div class="left" id="logo">
+                <img src="https://media.glassdoor.com/sqll/34941/matador-resources-squarelogo-1501251532932.png" alt="">
+            </div>
+            <section class="list">
+
+                <div class="center">
+                    <ul class="navbar">
+                        <li><a href="#home">HOME</a> </li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#books">OUR BOOKS</a></li>
+                        <li><a href="#blog">VISION</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                    </ul>
+                </div>       
+            </section>
+            </nav>
+    <section id="about">
+        <div id="text">
+            <h1 class="heading">ABOUT US</h1>
+             <p class="paragraph">MATADOR INC. partners with more than 200 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. We went to extra length by analyzing class notes of over 20-30 toppers and selecting only those which fits our criteria. Our motivation is to provide the best study material to every corner of USA. </p>
+             <p class="paragraph">The collection of books is updated continuously and new books are acquired on recommendation of experienced faculty members. </p>
+        </div>
+    </section>
+    <br>
+    <br><br>
+    <section id="books">
+        <h1 class="heading">OUR BOOKS</h1>
+        <center><u><h3><P>Click on book to see table of contents</P></h3></u></center>
+        <div class="ourbooks">
+            <div class="box1">
+                <a href="TOCA.HTML"><img src="library images/book1.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCB.HTML"><img src="library images/book12.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCC.HTML"><img src="library images/book3.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCD.HTML"><img src="library images/book4.PNG" alt=""></a>
+            </div>
+            <div class="search">
+                <h1 class="heading">Search</h1>
+                <form action="">
+                <div>
+                        <label for="name">Select Category: &nbsp; &nbsp;</label>
+                        <select name="name" id="name">
+                            <option value="poetry">Poetry</option>
+                            <option value="poetry">Nature</option>
+                            <option value="travel">Travel</option>
+                            <option value="biography">Biography</option>
+                            <option value="education">Education</option>
+                            <option value="history">History</option>
+                            <option value="arts">Arts</option>
+                            <option value="Philosophy">Philosophy</option>
+                            <option value="maths">Mathematics</option>
+                        </select>
+                    </div>
+                    <br> <br>  <br>  <br>
+                    <div>
+                        <label for="author">Select Author: &nbsp; &nbsp;</label>
+                        <select name="name" id="author">
+                            <option value="SH">STEPHEN HAWKING</option>
+                            <option value="LK">LIZ KESSLER</option>
+                            <option value="RB">REBECCA BEHRENS</option>
+                            <option value="LL">LOIS LOWRY</option>
+                            <option value="LAT">LOS ANGELES TIMES</option>
+                            <option value="NP">NATHANIEL PHILBRICK</option>
+                            <option value="PSy">PETER STOTHARD</option>
+                            <option value="YM">YANN MARTEL</option>
+                            <option value="JW">JESS WALTER</option>
+                            <option value="NH">NAPOLEON HILL</option>
+                            <option value="TK">T.J KLUNE</option>
+                            <option value="JT">J.R.R TOLKIEN</option>
+                            <option value="JR">J.K ROWLING</option>
+                            <option value="DA">DOUGLAS ADAMS</option>
+                        </select>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+        <div class="ourbooks1">
+            <div class="box1">
+                <a href="TOCA.HTML"><img src="library images/book5.PNG" alt=""></a>
+                
+            </div>
+            <div class="box1">
+                <a href="TOCB.HTML"><img src="library images/book18.PNG" alt=""></a>
+                
+            </div>
+            <div class="box1">
+                <a href="TOCC.HTML"><img src="library images/book15.PNG" alt=""></a>
+                
+            </div>
+            <div class="box1">
+                <a href="TOCD.HTML"><img src="library images/book8.PNG" alt=""></a>
+                
+            </div>
+
+               <div>
+                <form action="">
+                    <div>
+                        <label for="language">Select language: &nbsp; &nbsp;</label>
+                        <select name="name" id="language">
+                            <option value="english">English</option>
+                            <option value="sindhi">Sindhi</option>
+                            <option value="urdu">Urdu</option>
+                        </select>
+                    </div>
+                    <br> <br> <br><br>
+                    <div>
+                        <label for="title">Title: &nbsp; &nbsp;</label>
+                        
+                        <input type="text" name="name" id="title">
+                    </div>
+                    <br>
+                    <div class="btn">
+                        <input type="submit" value="Search">
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+        <div class="ourbooks2">
+            <div class="box1">
+                <a href="TOCA.HTML"><img src="library images/book9.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCB.HTML"><img src="library images/book5.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCC.HTML"><img src="library images/book2.PNG" alt=""></a>
+               
+            </div>
+            <div class="box1">
+                <a href="TOCD.HTML"><img src="library images/book6.PNG" alt=""></a>
+                
+            </div>
+            <div class="box1">
+                <a href="TOCA.HTML"><img src="library images/book7.PNG" alt=""></a>
+
+            </div>
+        </div>
+        <div class="ourbooks1">
+            <div class="box1">
+                <a href="TOCA.HTML"><img src="library images/book11.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCB.HTML"><img src="library images/book17.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCC.HTML"><img src="library images/book13.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCD.HTML"><img src="library images/book14.PNG" alt=""></a>
+            </div>
+            <div class="box1">
+                <a href="TOCF.HTML"><img src="library images/book16.PNG" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+          <div id="importance">
+              <h3 id="heading">VISION</h3>
+              <p class="para">We envision a world where anyone, anywhere has the power to transform their life through learning.</p>
+          </div>
+    </section>
+    
+    <section id="contact">
+        <h1 class="heading">CONTACT US</h1>
+        <div id="contactus">
+            <form action="">
+                
+                <div class="contact">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name">
+                </div>
+                <br>
+                <div class="contact">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" id="Email">
+                </div>
+                <br>
+                <div class="contact">
+                    <label for="Phone No">Phone No:</label>
+                    <input type="tel" name="Phone No" id="Phone No">
+                </div>
+                <br>
+                <div class="contact">
+                    <label for="text1">Comment or Message: </label>
+                    <br>
+                    <textarea name="text1" id="text1" cols="30" rows="10">Enter your Text</textarea>
+                </div>
+                    <div class="contact" id="button">
+                        <input type="submit" value="Send">
+                    </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        copyright&copy;www.abclibrary.com
+    </footer>
+    
+</body>
+</html>
